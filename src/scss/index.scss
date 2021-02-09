@@ -22,11 +22,29 @@ body {
     width:100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll
+    overflow-y: scroll;
+    color: rgba(0, 114, 188,1);
+    
+    font-weight:bolder;
     
 }
 .navSpan{
     word-wrap: break-word;
+    color: rgba(0, 114, 188,1);
+    // color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-decoration: none;
+    a{
+        color:inherit
+    };
+}
+header{
+    a.btn.btn-primary{
+    background-color: rgba(0, 114, 188,1);
+    padding: 10px 25px;
+    font-weight: bold;
+
+    }
 }
 
 .masthead {
@@ -47,8 +65,16 @@ body {
 }
 
 .bg2{
-    background-color:#4EB1BA
+    // background-color:#4EB1BA;
+    // background-color: #0072bc;
+    background-color: rgba(0, 114, 188,0.8);
+    // opacity: 0.8;
+    font-weight: bold;
+   .nav-item .nav-link{
+        color: #E9E9E9;
+        opacity: 1
 
+    }
 }
 
 .bg3{
@@ -59,9 +85,39 @@ body {
 nav{
     background-color:#222930
 }
-
+.elementor-widget-container{
+    color: rgba(0, 0, 0, 0.5)
+    // ;font-weight:bolder
+}
 .social{
     margin-top: 15px
+}
+
+.list-item{
+    a{
+        color: rgba(0, 114, 188,1);
+    }
+}
+
+.nr-konta{
+    color: rgba(0,0,0,1); font-weight: bold;
+}
+.footer{
+    background-color: rgba(0, 114, 188,1);
+    color: #E9E9E9;
+        opacity: 1;
+        padding: 10px;
+        font-weight: bold;
+}
+
+.card-body{
+    div{
+        a{
+            font-weight: bold;
+color: rgba(0, 114, 188,1);
+
+        }
+    }
 }
 
 @media (min-width: 576px) and (max-width: 1000px) {
