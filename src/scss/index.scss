@@ -1,1 +1,121 @@
-@import '~mdb-ui-kit/css/mdb.min.css';
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width:100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll
+    
+}
+.navSpan{
+    word-wrap: break-word;
+}
+
+.masthead {
+    overflow: hidden;
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(/img/negotiations.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(https://effect.edu.pl/wp-content/uploads/2018/07/negocjacje-pozycyjne-min.jpg);
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(https://rosnijwsile.pl/wp-content/uploads/2018/12/rosnijwisle.pl-jak-negocjowac-co-robic-aby-wygrac-kazde-negocjacje-.jpg);
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(https://hayes.com.pl/wp-content/uploads/2020/02/techniki-negocjacje-sprzeda%C5%BCowych-1-na-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    background-attachment: fixed;
+
+}
+
+.bg1{
+    background-color:#222930
+}
+
+.bg2{
+    background-color:#4EB1BA
+
+}
+
+.bg3{
+    background-color:#E9E9E9
+
+}
+
+nav{
+    background-color:#222930
+}
+
+.social{
+    margin-top: 15px
+}
+
+@media (min-width: 576px) and (max-width: 1000px) {
+    .navbar-expand-sm > .container{
+        flex-wrap:wrap
+    }
+  
+    .navbar-nav {
+        // display: block !important;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        margin-left: 0 !important
+    }
+
+    .navbar-collapse {
+        flex-basis: 100% !important;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: column;
+    }
+
+    .collapse:not(.show) {
+        display: none !important;
+
+    }
+
+    .navbar-expand-sm .navbar-toggler {
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.5);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.col-text-left{
+    text-align: left;
+    
+}
+.col-text-right{
+    text-align: right;
+}
+@media (max-width: 576px) {
+    .col-text-left{
+        text-align: center;
+        .navbar-brand{
+        white-space: normal;
+    margin-right: 0;}
+        // a{word-wrap: break-word !important;}
+    }
+    .col-text-right{
+        text-align: center;
+    }
+}

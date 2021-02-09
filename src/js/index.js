@@ -1,5 +1,11 @@
-import * as mdb from 'mdb-ui-kit';
+window.scrollBy({
+  top: 0,
+  left: 0,
+  behavior: 'smooth',
+});
 
-export default {
-  mdb,
-};
+const btnToggleMenu = document.querySelector('.navbar-toggler-right');
+const menu = document.querySelector('.navbar-collapse');
+btnToggleMenu.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});

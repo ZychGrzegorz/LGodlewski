@@ -14,11 +14,10 @@ module.exports = {
     filename: '[name].min.js',
   },
   plugins: [
-    new Webpack.ProvidePlugin({
-      'mdb': 'mdb',
-    }),
+    new Webpack.ProvidePlugin({}),
     new CopyWebpackPlugin([
-      { from: Path.resolve(__dirname, '../src/index.html') },
+      // { from: Path.resolve(__dirname, '../src/index.html') },
+      { from: Path.resolve(__dirname, '../src') },
       { from: Path.resolve(__dirname, '../src/img'), to: 'img' },
     ]),
     new FixStyleOnlyEntriesPlugin(),
@@ -29,7 +28,6 @@ module.exports = {
   resolve: {
     alias: {
       '~': Path.resolve(__dirname, '../src'),
-      'mdb': Path.join(__dirname, '../node_modules/mdb-ui-kit'),
     },
   },
   module: {

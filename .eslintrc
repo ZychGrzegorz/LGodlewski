@@ -9,7 +9,7 @@
     "amd": true
   },
   "ignorePatterns": [
-    "mdb"
+   
   ],
   "extends": [
     "airbnb-base",
