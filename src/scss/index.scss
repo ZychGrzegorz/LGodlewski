@@ -26,19 +26,27 @@ body {
     color: rgba(0, 114, 188, 1);
 
     font-weight: bolder;
+    span{
+        cursor: default;
+    }
 
 }
 
 .navSpan {
-    word-wrap: break-word;
+    // word-wrap: break-word;
     // color: rgba(0, 0, 0, 0.9);
     color: rgba(0, 114, 188, 1);
     // color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     text-decoration: none;
+    margin-right:0;
+    margin-left:auto;
+    width:auto;
 
     a {
-        color: inherit
+        color: inherit;
+        margin-right:0;
+    margin-left:auto;
     }
 
     ;
@@ -114,6 +122,8 @@ nav {
 }
 
 .footer {
+   margin-bottom:0px;
+   margin-top: auto !important;
     background-color: rgba(0, 114, 188, 1);
     color: #E9E9E9;
     opacity: 1;
@@ -132,6 +142,12 @@ nav {
 }
 
 @media (min-width: 576px) and (max-width: 1000px) {
+    .navSpan > .navbar-brand{
+        max-width: 150%;
+    }
+    .navbar-brand{
+        max-width:70%;
+    }
     .navbar-expand-sm>.container {
         flex-wrap: wrap
     }
@@ -177,17 +193,20 @@ nav {
 }
 
 @media (max-width: 576px) {
+  
     .col-text-left {
         text-align: center;
 
-        .navbar-brand {
-            white-space: normal;
-            margin-right: 0;
-        }
+        
 
         // a{word-wrap: break-word !important;}
     }
-
+    .navbar-brand {
+        white-space: normal;
+        margin-right: 0;
+        // max-width:70%
+        width:50%;
+    }
     .col-text-right {
         text-align: center;
     }
@@ -211,19 +230,19 @@ nav {
 
     // filter: invert(38%) sepia(69%) saturate(6516%) hue-rotate(187deg) brightness(90%) contrast(101%);
     &:hover {
-        transform: scale(0.95);
+        transform: scale(0.97);
     }
 }
 
 .logoNav {
-    width: 50%;
+    width: 75%;
     // filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(22deg) brightness(105%) contrast(100%)
     filter: invert(100%) sepia(2%) saturate(150%) hue-rotate(219deg) brightness(118%) contrast(83%);
     transition-duration: 0.1s;
 
     &:hover {
-        width: 50%;
-        transform: scale(0.95);
+        // width: 100%;
+        transform: scale(0.97);
 
         // filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(22deg) brightness(105%) contrast(100%)
         // background-color: red;
@@ -266,4 +285,9 @@ nav {
         width: 100%;
         left: 0;
     }
+}
+
+@media (max-width: 500px) {
+    .logoNav {
+        width: 120%;}
 }
